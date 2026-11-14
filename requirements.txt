@@ -1,0 +1,40 @@
+# rk-vlm-deploy 转换环境依赖（Linux x86_64, Python 3.10 ~ 3.12）
+# 转换需在 Linux 上执行：rkllm-toolkit / rknn-toolkit2 仅提供 Linux wheel。
+#
+# 安装顺序建议：
+#   1) 先装 CPU 版 torch（避免拉取 CUDA 版，节省空间）：
+#        pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cpu
+#   2) 再装其余依赖（torch 已满足则自动跳过）：
+#        pip install -r requirements.txt
+#   3) 单独固定关键版本（见下方注释）
+
+# --- 核心 ---
+numpy==1.26.4              # rkllm-toolkit 要求 numpy<=1.26.4，勿用 numpy 2.x
+protobuf==4.25.4           # rknn-toolkit2 要求 protobuf<=4.25.4，勿用 5.x/7.x
+transformers==5.8.1       # 需 >=5.8.1 才能加载 Qwen3_5 架构（5.8.0 无该架构）
+onnx==1.18.0
+onnxruntime>=1.17.0
+torch==2.6.0              # 建议用 CPU 版，见上方安装说明
+opencv-python-headless>=4.5.5.64
+
+# --- rkllm-toolkit 依赖（节选，完整见 rknn-llm/rkllm-toolkit/packages/requirements.txt）---
+safetensors==0.5.3
+sentencepiece==0.2.0
+tiktoken>=0.7.0,<=0.9.0
+einops==0.4.1
+scipy>=1.5.4
+tqdm>=4.64.0
+Jinja2==3.1.4
+accelerate>=1.0.1,<=1.5.2
+datasets==4.1.1
+pyarrow==21.0.0
+colorlog==6.8.2
+jsonlines==4.0.0
+easydict==1.13
+addict==2.4.0
+matplotlib>=3.9.4
+
+# --- rknn-toolkit2 依赖（除 torch 外，用 --no-deps 安装 wheel 后手动补齐）---
+psutil>=5.9.0
+ruamel.yaml>=0.17.21
+fast-histogram>=0.11

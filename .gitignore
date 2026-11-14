@@ -1,0 +1,51 @@
+# ---- 模型与产物（体积大，不入库）----
+*.rknn
+*.rkllm
+*.onnx
+*.pt
+*.safetensors
+*.bin
+*.gguf
+*.qparams
+
+# ---- 模型目录 / 权重 ----
+Xiaomi-OCR-0/
+models/
+onnx/
+rknn/
+rkllm/
+data/llm_inputs*/
+data/llm_inputs_xiaomi_ocr/
+data/llm_inputs_xiaomi_ocr.json
+
+# ---- 量化校准中间产物 ----
+*.pkl
+
+# ---- Python ----
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# ---- 日志 ----
+*.log
+logs/
+
+# ---- 构建 ----
+build/
+cmake-build-*/
+
+# ---- IDE / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- 临时 / 包 ----
+rknn_packages/
+board_pkg/
+*.whl
