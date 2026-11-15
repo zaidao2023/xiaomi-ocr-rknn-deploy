@@ -1,5 +1,5 @@
 #!/bin/bash
-# rk-vlm-deploy — Xiaomi-OCR-0 -> RV1126B conversion pipeline
+# xiaomi-ocr-rknn-deploy — Xiaomi-OCR-0 -> RV1126B conversion pipeline
 #
 # Run this from the Rockchip rknn-llm repo's examples/multimodal_model_demo
 # directory (so that export/export_vision.py, export/export_vision_rknn.py and

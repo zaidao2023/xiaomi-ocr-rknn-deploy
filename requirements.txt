@@ -1,4 +1,4 @@
-# rk-vlm-deploy 转换环境依赖（Linux x86_64, Python 3.10 ~ 3.12）
+# xiaomi-ocr-rknn-deploy 转换环境依赖（Linux x86_64, Python 3.10 ~ 3.12）
 # 转换需在 Linux 上执行：rkllm-toolkit / rknn-toolkit2 仅提供 Linux wheel。
 #
 # 安装顺序建议：
