@@ -1,4 +1,4 @@
-# rk-vlm-deploy
+# xiaomi-ocr-rknn-deploy
 
 **Xiaomi-OCR-0 多模态视觉语言模型 → Rockchip NPU 端侧部署** 的完整转换与验证流水线。
 
@@ -79,7 +79,7 @@ CLOTH PEG E140 ... Item(s) : Qty(s): ... Total Incl.GST@% RM:
 ## 目录结构
 
 ```
-rk-vlm-deploy/
+xiaomi-ocr-rknn-deploy/
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
@@ -122,11 +122,11 @@ pip install transformers==5.8.1
 ### 1. 获取源码
 
 ```bash
-git clone https://github.com/<your-name>/rk-vlm-deploy.git
+git clone https://github.com/<your-name>/xiaomi-ocr-rknn-deploy.git
 git clone https://github.com/airockchip/rknn-llm.git   # 上游依赖
 ```
 
-将 `rk-vlm-deploy/scripts/` 下的脚本复制到 rknn-llm 的
+将 `xiaomi-ocr-rknn-deploy/scripts/` 下的脚本复制到 rknn-llm 的
 `examples/multimodal_model_demo/` 对应子目录（`export/`、`data/`），并把
 `run_convert_*.sh` 放在该目录下运行——这样脚本能直接调用上游的
 `export_vision.py`、`export_vision_rknn.py` 与多模态 demo。
