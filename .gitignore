@@ -35,6 +35,9 @@ __pycache__/
 *.log
 logs/
 
+# ---- 评估生成的报告 ----
+eval/report*.json
+
 # ---- 构建 ----
 build/
 cmake-build-*/

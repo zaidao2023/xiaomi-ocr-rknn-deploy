@@ -1,0 +1,1 @@
+user: robot: \begin{align*} \textcolor{black}{&i=0,\,1,...n-2}& &\\[3mm] n+4(n-k)& = k^k + (m+k)(l+m) \\ [5.6em]& - m(k-l)+(m+n)-j(m-n)\quad\qquad \textcolor{black}{i=0,\,1,...n-2} &\\[3mm] n+4(n-k)& = k^k + (m+k)(l+m) \\ [5.6em]& - m(k-l)+(m+n)-j(m-n)\end{align*}

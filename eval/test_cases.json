@@ -1,0 +1,30 @@
+[
+  {
+    "name": "receipt",
+    "image": "img/receipt.jpg",
+    "prompt": "请对这张图片进行文档解析，将内容以 Markdown 格式输出。",
+    "gt_file": "fixtures/receipt.gt.txt",
+    "pred_file": "receipt.pred.txt"
+  },
+  {
+    "name": "handwrite",
+    "image": "img/handwrite-formula.jpg",
+    "prompt": "请识别这张手写图片中的所有数学公式，并以 LaTeX 格式输出。",
+    "gt_file": "fixtures/handwrite.gt.txt",
+    "pred_file": "handwrite.pred.txt"
+  },
+  {
+    "name": "qianziwen",
+    "image": "img/qianziwen.jpeg",
+    "prompt": "请识别这张书法图片中的所有汉字，按阅读顺序输出。",
+    "gt_file": "fixtures/qianziwen.gt.txt",
+    "pred_file": "qianziwen.pred.txt"
+  },
+  {
+    "name": "dense_equations",
+    "image": "img/dense-equations.jpg",
+    "prompt": "请识别图片中的所有数学公式，并以 LaTeX 格式输出。",
+    "gt_file": "fixtures/dense.gt.txt",
+    "pred_file": "dense.pred.txt"
+  }
+]
